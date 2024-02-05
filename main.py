@@ -1,9 +1,11 @@
 from flask import Flask, render_template, redirect, url_for, flash, abort
+from flask_bootstrap import Bootstrap5
 import secrets
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(32)
+Bootstrap5(app)
 
 
 @app.route('/')
