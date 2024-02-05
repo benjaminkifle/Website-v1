@@ -6,7 +6,7 @@ import secrets
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(32)
 Bootstrap5(app)
-
+var = 0
 
 @app.route('/')
 def home():
